@@ -1,0 +1,501 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>自然の恵み農園</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+  </head>
+  <body>
+    <!--ローディングアニメーション-->
+    <div class="loader__bg js__loader--bg">
+      <div class="loader js__loader">
+        <img src="/images/loading.svg" alt="">
+        <p class="loader__text">
+          loading
+          <span class="dots">
+            <span>.</span>
+            <span>.</span>
+            <span>.</span>
+          </span>
+        </p>
+      </div>
+    </div>
+
+    <!--header-->
+    <header class="header">
+      <div class="header__inner">
+        <h1>
+          <a href="/" class="header__logo">
+            <img src="images/logo.svg" alt="FARM" width="169" height="29">
+          </a>
+        </h1>
+        <!--ハンバーガーボタン-->
+        <button type="button" class="hamburger" aria-label="メニューを開く">
+          <span class="hamburger__line"></span>
+          <span class="hamburger__line"></span>
+          <span class="hamburger__text">MENU</span>
+        </button>
+        <!--ナビゲーション-->
+        <nav class="header__nav">
+          <ul class="header__list">
+            <li class="header__item top">
+              <a href="/" class="header__link">トップ<span class="header__en">top</span></a>
+            </li>
+            <li class="header__item">
+              <a href="#about" class="header__link">私たちについて<span class="header__en">about</span></a>
+            </li>
+            <li class="header__item">
+              <a href="#activity" class="header__link">活動紹介<span class="header__en">works</span></a>
+            </li>
+            <li class="header__item">
+              <a href="#faq" class="header__link">よくあるご質問<span class="header__en">faq</span></a>
+            </li>
+            <li class="header__item">
+              <a href="#news" class="header__link">お知らせ<span class="header__en">news</span></a>
+            </li>
+            <li class="header__item">
+              <a href="#access" class="header__link">アクセス<span class="header__en">access</span></a>
+            </li>
+            <li class="header__tel">
+              <p class="header__tel-text">問い合わせ電話</p>
+              <a href="tel:12345678910" class="header__tel-number">123-4567-8910</a>
+              <p class="header__tel-time">
+                【受付時間】<br>
+                10:00 ~ 18:00（土日祝を除く）
+              </p>
+            </li>
+            <li><a href="contact-home.html" class="header__btn">お問い合わせ</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!--fv-->
+      <section class="fv">
+        <div class="fv__container">
+          <div class="catchcoopy">
+            <img class="fv__logo" src="images/logo-big.svg" alt="自然の恵み農園のロゴ" width="203" height="157">
+            <p class="fv__text">自然の恵みを感じ、<br class="br-fv">豊かな未来を。</p>
+          </div>
+          <a href="#" class="news fv__news">
+            <div class="news__info">
+              <h2 class="news__title">News</h2>
+              <span class="news__text">2026.03.01</span>
+            </div>
+            <h3 class="news__text--bottom">タイトルが入ります。 タイトルが入り…</h3>
+          </a>
+          <div class="scroll">
+            <a href="#news" class="scroll__down"><span class="scroll__text">scroll</span></a>
+          </div>
+        </div>
+      </section>
+
+      <!--about-->
+      <section class="about" id="about">
+        <div class="about__container">
+          <div class="about__ph">
+            <img class="about__ph--tl" src="images/goat.png" alt="ヤギの画像" width="200" height="252">
+          </div>
+          <div class="about__ph">
+            <img class="about__ph--tr" src="images/tomato.png" alt="トマトの画像" width="181" height="217">
+          </div>
+          <div class="about__ph">
+            <img class="about__ph--bl" src="images/male.png" alt="男性の画像" width="200" height="200">
+          </div>
+          <div class="about__ph">
+            <img class="about__ph--br" src="images/cattle.png" alt="牛の画像" width="235" height="269">
+          </div>
+          <div class="about__text">
+            <h2 class="about__title">
+              <img class="about__text--img" src="images/logo.svg" alt="ロゴの画像" width="314" height="54">
+            </h2>
+            <p class="about__card--text">
+              自然の恵み農園は、<br>
+              自然の恵みと動物の尊さが調和する<span class="sp-br"></span>特別な場所です。<br>
+              新鮮で美味しい農産物を栽培し、<span class="sp-br"></span>心温まる動物たちと触れ合える場所<span class="sp-br"></span>でもあります。
+            </p>
+            <p class="about__card--text">
+              自然の恵みを受け、<span class="sp-br"></span> 動物たちとの特別なひとときを<span class="sp-br"></span> 楽しんでいただける場所として、<br>
+              私たちは誇りを持って活動をしています。<br>
+              一緒に自然と動物の美しさを共有しましょう。
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!--activity-->
+      <section class="activity" id="activity">
+        <div class="activity__container">
+          <h2 class="title activity__title">活動紹介</h2>
+          <div class="activity__tabs" role="tablist">
+            <button class="tab active" type="button" role="tab" id="tab-farm" aria-controls="panel-farm" aria-selected="true">農園</button>
+            <button class="tab" type="button" role="tab" id="tab-ranch" aria-controls="panel-ranch" aria-selected="false">牧場</button>
+            <button class="tab right" type="button" role="tab" id="tab-online" aria-controls="panel-online" aria-selected="false">オンライン販売</button>
+          </div>
+          <!-- コンテンツ（農園・牧場・オンライン販売） -->
+          <div class="activity__contents">
+            <!-- 農園 -->
+            <div class="content show" role="tabpanel" id="panel-farm" aria-labelledby="tab-farm">
+              <p class="content__text">
+                私たちは、「持続可能な農業」を掲げて、自然の恵みに感謝しながら、農作物を育てています。<br>
+                無農薬で、体にも環境にも優しく、季節ごとに異なる品種を育て、提供しています。<br>
+                ぜひ一度、農園にお越し頂き、自分の手で収穫した新鮮な野菜、果物をお召し上がりください。
+              </p>
+              <div class="swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img class="content__image" src="/images/AdobeStock_367389499.png" alt="畑の画像">
+                  </div>
+                  <div class="swiper-slide">
+                    <img class="content__image" src="/images/AdobeStock_562266191.png" alt="収穫の画像">
+                  </div>
+                  <div class="swiper-slide">
+                    <img class="content__image" src="/images/AdobeStock_545162233.png" alt="いちごの画像">
+                  </div>
+                  <div class="swiper-slide">
+                    <img class="content__image" src="/images/AdobeStock_382800161.png" alt="生産者の画像">
+                  </div>
+                  <div class="swiper-slide">
+                    <img class="content__image" src="/images/AdobeStock_367389499.png" alt="畑の画像">
+                  </div>
+                  <div class="swiper-slide">
+                    <img class="content__image" src="/images/AdobeStock_562266191.png" alt="収穫の画像">
+                  </div>
+                  <div class="swiper-slide">
+                    <img class="content__image" src="/images/AdobeStock_545162233.png" alt="いちごの画像">
+                  </div>
+                  <div class="swiper-slide">
+                    <img class="content__image" src="/images/AdobeStock_382800161.png" alt="生産者の画像">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 牧場 -->
+            <div class="content" role="tabpanel" id="panel-ranch" aria-labelledby="tab-ranch">
+              <p class="content__text">
+                私たちの牧場は、自然と動物との共存を尊重し、持続可能な農業の原則に基づいて運営されています。<br>
+                広々とした環境で、動物たちとのふれ合いを通じて、自然の恵みと動物の尊さを感じ、<br>
+                心温まるひとときを過ごしていただけます。
+              </p>
+              <div class="swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img class="content__image" src="/images/AdobeStock_307247648.png" alt="やぎの画像">
+                  </div>
+                  <div class="swiper-slide">
+                    <img class="content__image" src="/images/AdobeStock_485787177.png" alt="豚の画像">
+                  </div>
+                  <div class="swiper-slide">
+                    <img class="content__image" src="/images/AdobeStock_477489148.png" alt="馬の画像">
+                  </div>
+                  <div class="swiper-slide">
+                    <img class="content__image" src="/images/AdobeStock_105054722.png" alt="牛の画像">
+                  </div>
+                  <div class="swiper-slide">
+                    <img class="content__image" src="/images/AdobeStock_307247648.png" alt="やぎの画像">
+                  </div>
+                  <div class="swiper-slide">
+                    <img class="content__image" src="/images/AdobeStock_485787177.png" alt="豚の画像">
+                  </div>
+                  <div class="swiper-slide">
+                    <img class="content__image" src="/images/AdobeStock_477489148.png" alt="馬の画像">
+                  </div>
+                  <div class="swiper-slide">
+                    <img class="content__image" src="/images/AdobeStock_105054722.png" alt="牛の画像">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- オンライン販売 -->
+            <div class="content" role="tabpanel" id="panel-online" aria-labelledby="tab-online">
+              <p class="content__text">
+                自然の恵み農園から直接お届けする、新鮮で美味しい農産物と<br>
+                手作りのジャムやバターなどの加工品を提供しています。<br>
+                自然の恩恵をご自宅でお楽しみいただけます。
+              </p>
+              <div class="swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img class="content__image" src="/images/AdobeStock_369550407.png" alt="野菜の画像">
+                  </div>
+                  <div class="swiper-slide">
+                    <img class="content__image" src="/images/AdobeStock_267533459.png" alt="ジャムの画像">
+                  </div>
+                  <div class="swiper-slide">
+                    <img class="content__image" src="/images/AdobeStock_189730299.png" alt="チーズの画像">
+                  </div>
+                  <div class="swiper-slide">
+                    <img class="content__image" src="/images/AdobeStock_164456093.png" alt="アイスの画像">
+                  </div>
+                  <div class="swiper-slide">
+                    <img class="content__image" src="/images/AdobeStock_369550407.png" alt="野菜の画像">
+                  </div>
+                  <div class="swiper-slide">
+                    <img class="content__image" src="/images/AdobeStock_267533459.png" alt="ジャムの画像">
+                  </div>
+                  <div class="swiper-slide">
+                    <img class="content__image" src="/images/AdobeStock_189730299.png" alt="チーズの画像">
+                  </div>
+                  <div class="swiper-slide">
+                    <img class="content__image" src="/images/AdobeStock_164456093.png" alt="アイスの画像">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--faq-->
+      <section class="faq" id="faq">
+        <h3 class="title faq__title">よくあるご質問</h3>
+        <ul class="accordion">
+          <li class="accordion__content">
+            <div class="accordion__q">
+              <button type="button">
+                <span class="accordion__q--prefix">Q</span>
+                <span class="accordion__q--content">農園の野菜や果物は有機栽培ですか？</span>
+                <span class="accordion__q--icon"></span>
+              </button>
+            </div>
+            <div class="accordion__a">
+              <div class="accordion__a--inner">
+                <div class="accordion__a--prefix">A</div>
+                <div class="accordion__a--content">
+                  <p>
+                    はい、私たちの農園では有機栽培の原則に従って野菜と果物を栽培しています。<br class="br-pc">
+                    化学肥料や農薬を極力使用せず、土壌と作物の健康を第一に考えております。
+                  </p>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="accordion__content">
+            <div class="accordion__q">
+              <button type="button">
+                <span class="accordion__q--prefix">Q</span>
+                <span class="accordion__q--content">農園での見学や体験ツアーは行っていますか？</span>
+                <span class="accordion__q--icon"></span>
+              </button>
+            </div>
+            <div class="accordion__a">
+              <div class="accordion__a--inner">
+                <div class="accordion__a--prefix">A</div>
+                <div class="accordion__a--content">
+                  <p>
+                    はい、農園での見学や体験ツアーを随時開催しています。<br class="br-pc">
+                    農場の日常や農作業を親しみやすく説明し、実際に農園での体験を楽しむことができます。
+                  </p>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="accordion__content">
+            <div class="accordion__q">
+              <button type="button">
+                <span class="accordion__q--prefix">Q</span>
+                <span class="accordion__q--content">オンラインで注文した農産物はどのように配送されますか？</span>
+                <span class="accordion__q--icon"></span>
+              </button>
+            </div>
+            <div class="accordion__a">
+              <div class="accordion__a--inner">
+                <div class="accordion__a--prefix">A</div>
+                <div class="accordion__a--content">
+                  <p>オンラインで注文いただいた農産物は、専用の梱包で新鮮さを保ったまま、 <br class="br-pc">指定された配送先にお届けします。</p>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="accordion__content">
+            <div class="accordion__q">
+              <button type="button">
+                <span class="accordion__q--prefix">Q</span>
+                <span class="accordion__q--content">農園で提供される季節ごとの野菜や果物の品種は何ですか？</span>
+                <span class="accordion__q--icon"></span>
+              </button>
+            </div>
+            <div class="accordion__a">
+              <div class="accordion__a--inner">
+                <div class="accordion__a--prefix">A</div>
+                <div class="accordion__a--content">
+                  <p>春にはイチゴ、夏にはトマトや茄子、秋にはカボチャやリンゴ、冬にはブロッコリーやみかんなど、季節に応じた野菜、果物を提供、収穫体験することができます。</p>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <!--notice-->
+      <section class="notice" id="news">
+        <div class="notice__container">
+          <div class="notice__head">
+            <h2 class="title notice__title">お知らせ</h2>
+            <p class="notice__text">
+              季節の催し物のお知らせ、見学ツアーのご案内、<br class="br-notice">
+              オンライン販売セールのお知らせなど、自然の恵み農園の最新情報をお届けします。
+            </p>
+            <a href="notice-home.html" class="button-l notice__btn">View More</a>
+          </div>
+          <div class="news__list">
+            <article class="news__item">
+              <a href="#" class="news__link">
+                <div class="news__meta">
+                  <time class="news__date" datetime="2026-03-04">2026.03.04</time>
+                  <span class="news__category">カテゴリ</span>
+                </div>
+                <h3 class="news__item--title">タイトルが入ります。タイトルが入ります。タイトルが入ります。</h3>
+              </a>
+            </article>
+            <article class="news__item">
+              <a href="#" class="news__link">
+                <div class="news__meta">
+                  <time class="news__date" datetime="2026-03-04">2026.03.04</time>
+                  <span class="news__category">カテゴリ</span>
+                </div>
+                <h3 class="news__item--title">タイトルが入ります。タイトルが入ります。タイトルが入ります。</h3>
+              </a>
+            </article>
+            <article class="news__item">
+              <a href="#" class="news__link">
+                <div class="news__meta">
+                  <time class="news__date" datetime="2026-03-04">2026.03.04</time>
+                  <span class="news__category">カテゴリ</span>
+                </div>
+                <h3 class="news__item--title">タイトルが入ります。タイトルが入ります。タイトルが入ります。</h3>
+              </a>
+            </article>
+          </div>
+        </div>
+        <div class="sp-btn">
+          <a href="notice-home.html" class="button-l notice__btn--sp">View More</a>
+        </div>
+      </section>
+
+      <!--access-->
+      <section class="access" id="access">
+        <h2 class="title access__title">アクセス</h2>
+        <div class="access__container">
+          <div class="access__inner">
+            <!-- 左右2カラム（意味的にはdlで内容を表現） -->
+            <div class="access__content--wrapper">
+              <dl class="access__contact">
+                <dt class="title--top"><span>会社名</span></dt>
+                <dd class="content--top"><span>株式会社自然の恵み農園</span></dd>
+                <dt class="item--add"><span>所在地</span></dt>
+                <dd class="content--add">
+                  〒123-4567 <br class="br-sp">
+                  千葉県〇〇市××町<br class="br-sp">
+                  1丁目23-45
+                </dd>
+                <dt class="item--tel"><span>電話番号</span></dt>
+                <dd class="content--tel"><a href="tel:01234567890">012-3456-7890</a></dd>
+                <dt class="title--bottom"><span>営業時間</span></dt>
+                <dd class="content--bottom">
+                  10:00〜18:00<br class="br-sp">
+                  （土日祝を除く）
+                </dd>
+              </dl>
+              <dl class="access__contact--map">
+                <dt class="map--title">
+                  <span> Googleマップ</span><br>
+                  <a href="https://maps.app.goo.gl/hwpu26ByjG4ox3RR7" target="_blank" class="map-link">拡大地図を表示</a>
+                </dt>
+                <dd class="access__map" id="access__map">
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3237.607210263682!2d140.0589579107946!3d35.76045797244729!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60227e5329d23245%3A0xd4cde63c28d3f984!2z44G144Gq44Gw44GX44Ki44Oz44OH44Or44K744Oz5YWs5ZyS!5e0!3m2!1sja!2sjp!4v1756904422471!5m2!1sja!2sjp" height="300" style="border: 0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                  ></iframe>
+                </dd>
+              </dl>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--contact-->
+      <section class="contact" id="contact">
+        <div class="contact__inner">
+          <h2 class="contact__title">お問い合わせ</h2>
+          <p class="contact__text">
+            お仕事のご相談、農園体験、牧場の見学、その他ご質問<br>
+            お気軽にお問い合わせください。
+          </p>
+          <a href="contact-home.html" class="button-l contact__btn">お問い合わせ</a>
+          <div class="contact__tel">
+            <span class="tel-text">問い合わせ電話：</span>
+            <a href="tel:12345678910" class="tel-number">123-4567-8910</a>
+          </div>
+          <p class="tel-time">【受付時間】<span class="sp-br"></span>10:00 ~ 18:00（土日祝を除く）</p>
+        </div>
+      </section>
+    </main>
+
+    <!-- footer -->
+    <footer class="footer">
+      <div class="footer__inner">
+        <!-- 左側 -->
+        <div class="footer__left">
+          <a href="./" class="footer__logo">
+            <img src="/images/logo.svg" alt="logo" width="202" height="35">
+          </a>
+          <address class="footer__contact">
+            <p class="footer__address">
+              〒123-4567<br>
+              千葉県〇〇市××町1丁目23-45
+            </p>
+            <p class="footer__tel">
+              TEL:<a href="tel:12345678910">123-4567-8910</a><br>
+              FAX:12-345-6789
+            </p>
+          </address>
+        </div>
+        <!-- 右側 -->
+        <div class="footer__right">
+          <!-- フッターナビ -->
+          <nav class="footer__nav" aria-label="フッターナビゲーション">
+            <ul>
+              <li><a href="/" class="nav--content">ホーム</a></li>
+              <li><a href="#about" class="nav--content">私たちについて</a></li>
+              <li><a href="#activity" class="nav--content">活動紹介</a></li>
+              <li><a href="#faq" class="nav--content">よくあるご質問</a></li>
+              <li><a href="#news" class="nav--content">お知らせ</a></li>
+              <li><a href="#access" class="nav--content">アクセス</a></li>
+            </ul>
+          </nav>
+          <!-- snsリンク -->
+          <nav class="footer__sns" aria-label="SNSリンク">
+            <a href="https://x.com/" target="_blank" class="footer__icon"><img src="/images/x-logo.png" alt="X" width="25" height="25"></a>
+            <a href="https://www.instagram.com/" target="_blank" class="footer__icon"><img src="/images/instagram-logo.png" alt="Instagram" width="25" height="25"></a>
+            <a href="https://www.youtube.com/" target="_blank" class="footer__icon"><img src="/images/youtube-logo.png" alt="Youtube" width="25" height="25"></a>
+          </nav>
+        </div>
+      </div>
+
+      <div class="footer__copyright">
+        <small>&copy; shizen-no-megumi-nouen Inc .2023</small>
+      </div>
+    </footer>
+
+    <!-- ページトップボタン -->
+    <div class="page-top">
+      <a href="#"><img src="images/page-top.svg" alt="ページトップへ戻る" width="30" height="30"></a>
+    </div>
+
+    <!-- JS -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="js/style.js"></script>
+  </body>
+</html>
